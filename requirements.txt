@@ -1,0 +1,3 @@
+# Requirements file for CS 238V Project: Validation of Safety Critical Systems
+
+highway-env==1.10.2
