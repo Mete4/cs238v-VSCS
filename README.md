@@ -8,7 +8,7 @@ This is our final project for CS 238V: Validation of Safety Critical Systems. We
 pip install -r requirements.txt
 ```
 
-### Step 2
+### Step 2 (Run Default test using DQN on highway-v0)
 ```bash
-python scripts/default_code.py
+python scripts/dqn_test.py
 ```

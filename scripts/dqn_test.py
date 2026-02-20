@@ -18,10 +18,10 @@ model = DQN('MlpPolicy', env,
               verbose=1,
               tensorboard_log="highway_dqn/")
 model.learn(int(2e4))
-model.save("highway_dqn/model")
+model.save("models/highway_dqn_model")
 
 # Load and test saved model
-model = DQN.load("highway_dqn/model")
+model = DQN.load("models/highway_dqn_model")
 while True:
   done = truncated = False
   obs, info = env.reset()
