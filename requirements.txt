@@ -4,3 +4,4 @@ highway-env==1.10.2
 stable_baselines3
 tensorboard
 gymnasium
+gymnasium[other]

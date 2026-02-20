@@ -10,5 +10,5 @@ pip install -r requirements.txt
 
 ### Step 2
 ```bash
-python default_code.py
+python dqn_highway.py
 ```
