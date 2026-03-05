@@ -2,3 +2,4 @@ test.py
 venv/
 .venv/
 dqn_highway.py
+logs/
