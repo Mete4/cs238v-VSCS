@@ -10,3 +10,4 @@ raccetrack_dqn_old/
 fvi_racetrack_train.py
 colabs/fvi_racetrack.ipynb
 colabs/HighwayEnv
+merge/merge_ppo/HighwayEnv
