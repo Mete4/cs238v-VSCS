@@ -1,0 +1,14 @@
+nohup: ignoring input
+Fuzzing sweep config:
+  delay_probs  : [0.01]
+  num_rollouts : 100000 per delay_prob
+  num_workers  : 2
+  model_path   : /mnt/c/Users/hallj/GitHub/CS-238V-Project/cs238v-VSCS/colabs/../merge/merge_ppo/PPO_1/final_model
+  output       : colabs/delayed_action_100k_nominal.json
+
+Fuzzing:   0%|          | 0/100000 [00:00<?, ?rollout/s]Fuzzing:  50%|█████     | 50000/100000 [4:14:31<4:14:31,  3.27rollout/s]Fuzzing:  50%|█████     | 50000/100000 [4:14:31<4:14:31,  3.27rollout/s, delay=0.010, fails=1024]Fuzzing: 100%|██████████| 100000/100000 [4:14:33<00:00,  7.95rollout/s, delay=0.010, fails=1024] Fuzzing: 100%|██████████| 100000/100000 [4:14:33<00:00,  7.95rollout/s, delay=0.010, fails=1067]
+[saved] delay_prob=0.010  failures=2091/100000  p_fail_is=0.02091  mlf_logp=-0.10050335853501452
+Fuzzing: 100%|██████████| 100000/100000 [4:14:34<00:00,  6.55rollout/s, delay=0.010, fails=1067]
+
+Total time: 254.6 min
+Results saved to colabs/delayed_action_100k_nominal.json

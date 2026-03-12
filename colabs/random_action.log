@@ -1,0 +1,14 @@
+nohup: ignoring input
+Random-action fuzzing sweep config:
+  random_probs : [0.01]
+  num_rollouts : 100000 per random_prob
+  num_workers  : 4
+  model_path   : /mnt/c/Users/hallj/GitHub/CS-238V-Project/cs238v-VSCS/colabs/../merge/merge_ppo/PPO_1/final_model
+  output       : colabs/random_action_100k_nominal.json
+
+Fuzzing:   0%|          | 0/100000 [00:00<?, ?rollout/s]Fuzzing:  25%|██▌       | 25000/100000 [8:15:46<24:47:18,  1.19s/rollout]Fuzzing:  25%|██▌       | 25000/100000 [8:15:46<24:47:18,  1.19s/rollout, fails=756, rp=0.010]Fuzzing:  50%|█████     | 50000/100000 [8:16:31<6:49:10,  2.04rollout/s, fails=756, rp=0.010] Fuzzing:  50%|█████     | 50000/100000 [8:16:31<6:49:10,  2.04rollout/s, fails=774, rp=0.010]Fuzzing:  75%|███████▌  | 75000/100000 [8:16:43<1:51:15,  3.75rollout/s, fails=774, rp=0.010]Fuzzing:  75%|███████▌  | 75000/100000 [8:16:43<1:51:15,  3.75rollout/s, fails=769, rp=0.010]Fuzzing: 100%|██████████| 100000/100000 [8:17:08<00:00,  6.17rollout/s, fails=769, rp=0.010] Fuzzing: 100%|██████████| 100000/100000 [8:17:08<00:00,  6.17rollout/s, fails=707, rp=0.010]
+[saved] random_prob=0.010  failures=3006/100000  p_fail_is=0.03006  mlf_logp=-0.11055369438851598
+Fuzzing: 100%|██████████| 100000/100000 [8:17:09<00:00,  3.35rollout/s, fails=707, rp=0.010]
+
+Total time: 497.2 min
+Results saved to colabs/random_action_100k_nominal.json

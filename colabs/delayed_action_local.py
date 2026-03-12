@@ -7,7 +7,7 @@ Usage:
     python colabs/delayed_action_local.py                          # defaults
     python colabs/delayed_action_local.py --num_workers 8 --num_rollouts 500
     python colabs/delayed_action_local.py --num_workers 1          # single-process (safe for testing)
-    nohup python colabs/delayed_action_local.py --num_workers 10 --num_rollouts 20000 --output colabs/fuzzing_results_20k.json > colabs/fuzzing.log 2>&1 &
+    nohup python colabs/delayed_action_local.py --num_workers 12 --num_rollouts 20000 --output colabs/fuzzing_results_20k.json > colabs/fuzzing.log 2>&1 &
 """
 
 import argparse
@@ -241,3 +241,7 @@ def main():
 
 if __name__ == "__main__":
     main()
+
+
+# nohup python colabs/delayed_action_local.py --num_workers 2 --num_rollouts 100000 --delay_probs 0.01 --output colabs/delayed_action_100k_nominal.json > colabs/delayed_action.log 2>&1 &
+
