@@ -16,3 +16,7 @@ merge/merge_ppo/HighwayEnv
 merge/merge_ppo/p_fail_early.png
 merge/merge_ppo/p_fail_over_time.png
 merge/merge_ppo/p_fail_zoomed_y.png
+
+# Folder of original direct sampling code, ignoring it since deprecated
+original_ds_run_no_delay/
+plots/
