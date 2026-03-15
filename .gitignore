@@ -1,6 +1,7 @@
 test.py
 venv/
 .venv/
+.venvnb/
 dqn_highway.py
 logs/
 
